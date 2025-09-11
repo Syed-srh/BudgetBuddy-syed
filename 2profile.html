@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetBuddy – Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" data-theme="dark">
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BB</div>
+        <strong>BudgetBuddy</strong>
+      </div>
+      <nav class="nav">
+      
+        <a href="1intro.html">🏠<span>Intro</span></a>
+        <a href="3dashboard.html">📈<span>Dashboard</span></a>
+        <a class="active" href="2profile.html">👤<span>Profile</span></a>
+        <a href="4categories.html">📊<span>Categories</span></a>
+        <a href="5reports.html">📑<span>Reports</span></a>
+        <a href="6settings.html">⚙️<span>Settings</span></a>
+        <div class="spacer"></div>
+        
+        <a href="#logout">🚪<span>Logout</span></a>
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <div class="balance">
+        <div>
+          <div class="small">Profile</div>
+          <div class="amount">Your Details</div>
+        </div>
+        <div class="note">Keep your info up to date</div>
+      </div>
+      <div class="profile">
+        <div class="avatar">SR</div>
+        <div class="small">Syed Rahil</div>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="grid">
+        <div class="card col-span-4 card-grid card-grid-start" style="gap:12px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div class="avatar" style="width:64px;height:64px; font-size:20px;">SR</div>
+            <div>
+              <div><strong>Avatar</strong></div>
+              <div class="small">Editable • Initials fallback</div>
+            </div>
+          </div>
+          <a class="btn" href="#">Upload New</a>
+        </div>
+
+        <div class="card col-span-8">
+          <h3>Personal Info</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" class="input" type="text" placeholder="Enter full name" value="Syed Rahil" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" class="input" type="email" placeholder="you@example.com" value="syed@example.com" />
+            </div>
+          </div>
+          <div class="form-row" style="margin-top:12px;">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" class="input" type="tel" placeholder="(+91) 00000 00000" value="(+91) 98765 43210" />
+            </div>
+            <div class="field">
+              <label for="budget">Monthly Budget Target</label>
+              <input id="budget" class="input" type="number" placeholder="₹ 50,000" value="50000" />
+            </div>
+          </div>
+          <div style="margin-top:12px; display:flex; gap:10px;">
+            <a class="btn primary" href="#">Update Details</a>
+            <a class="btn" href="#">Set New Goal</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" style="margin-top:8px;">
+        <div class="card col-span-3">
+          <h3>Lifetime Income</h3>
+          <div class="kpi">
+            <div class="value">₹ 24,50,000</div>
+          </div>
+        </div>
+        <div class="card col-span-3">
+          <h3>Lifetime Expenses</h3>
+          <div class="kpi">
+            <div class="value">₹ 18,20,000</div>
+          </div>
+        </div>
+        <div class="card col-span-3">
+          <h3>Net Savings</h3>
+          <div class="kpi">
+            <div class="value">₹ 6,30,000</div>
+          </div>
+        </div>
+        <div class="card col-span-3 card-grid">
+          <h3>Quick Actions</h3>
+          <a class="btn" href="#">Set New Goal</a>
+          <a class="btn" href="#">Export Profile</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="logout" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="logout-title">
+    <div class="modal">
+      <h3 id="logout-title">Are you sure you want to logout?</h3>
+      <p class="small">You will be redirected to the login page.</p>
+      <div class="actions">
+        <a class="btn" href="#">Cancel</a>
+        <a class="btn danger" href="login.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

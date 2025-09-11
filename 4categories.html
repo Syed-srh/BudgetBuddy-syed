@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetBuddy – Categories</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" data-theme="dark">
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BB</div>
+        <strong>BudgetBuddy</strong>
+      </div>
+      <nav class="nav">
+        
+        <a href="1intro.html">🏠<span>Intro</span></a>
+        <a href="3dashboard.html">📈<span>Dashboard</span></a>
+        <a href="2profile.html">👤<span>Profile</span></a>
+        <a class="active" href="4categories.html">📊<span>Categories</span></a>
+        <a href="5reports.html">📑<span>Reports</span></a>
+        <a href="6settings.html">⚙️<span>Settings</span></a>
+        <div class="spacer"></div>
+        
+        <a href="#logout">🚪<span>Logout</span></a>
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <div class="balance">
+        <div>
+          <div class="small">Categories</div>
+          <div class="amount">Where money flows</div>
+        </div>
+        <div class="note">Track spending by category</div>
+      </div>
+      <div class="profile">
+        <div class="avatar">SR</div>
+        <div class="small">Syed Rahil</div>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="grid" aria-label="Categories Grid">
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Food</strong>
+            <span class="small">₹ 14,200</span>
+          </div>
+          <div class="progress red"><span style="width:65%"></span></div>
+          <div class="small">65% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Transport</strong>
+            <span class="small">₹ 4,200</span>
+          </div>
+          <div class="progress red"><span style="width:35%"></span></div>
+          <div class="small">35% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Bills</strong>
+            <span class="small">₹ 7,800</span>
+          </div>
+          <div class="progress red"><span style="width:55%"></span></div>
+          <div class="small">55% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Shopping</strong>
+            <span class="small">₹ 5,100</span>
+          </div>
+          <div class="progress red"><span style="width:40%"></span></div>
+          <div class="small">40% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Entertainment</strong>
+            <span class="small">₹ 2,100</span>
+          </div>
+          <div class="progress red"><span style="width:20%"></span></div>
+          <div class="small">20% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Healthcare</strong>
+            <span class="small">₹ 3,600</span>
+          </div>
+          <div class="progress red"><span style="width:30%"></span></div>
+          <div class="small">30% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid" style="gap:8px;">
+          <div class="kpi" style="align-items:flex-start;">
+            <strong>Others</strong>
+            <span class="small">₹ 1,250</span>
+          </div>
+          <div class="progress red"><span style="width:10%"></span></div>
+          <div class="small">10% of budget</div>
+        </div>
+        <div class="card col-span-3 card-grid card-grid-start">
+          <h3>Add New Category</h3>
+          <input class="input" type="text" placeholder="Category name" />
+          <a class="btn primary" href="#">Add Category</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="logout" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="logout-title">
+    <div class="modal">
+      <h3 id="logout-title">Are you sure you want to logout?</h3>
+      <p class="small">You will be redirected to the login page.</p>
+      <div class="actions">
+        <a class="btn" href="#">Cancel</a>
+        <a class="btn danger" href="login.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

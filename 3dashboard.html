@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetBuddy – Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" data-theme="dark">
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BB</div>
+        <strong>BudgetBuddy</strong>
+      </div>
+      <nav class="nav">
+      
+        <a href="1intro.html">🏠<span>Intro</span></a>
+        <a class="active" href="3dashboard.html">📈<span>Dashboard</span></a>
+        <a  href="2profile.html">👤<span>Profile</span></a>
+        <a href="4categories.html">📊<span>Categories</span></a>
+        <a href="5reports.html">📑<span>Reports</span></a>
+        <a href="6settings.html">⚙️<span>Settings</span></a>
+        <div class="spacer"></div>
+      
+        <a href="#logout">🚪<span>Logout</span></a>
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <div class="balance">
+        <div>
+          <div class="small">Total Balance</div>
+          <div class="amount">₹ 78,450.00</div>
+        </div>
+        <div class="note">You're on track this month 🎯</div>
+      </div>
+      <div class="profile">
+        <div class="avatar" aria-hidden="true">SR</div>
+        <div class="small">Syed Rahil</div>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="grid" aria-labelledby="overview-title">
+        <div class="card col-span-3">
+          <h3 id="overview-title">Overview</h3>
+          <div class="kpi">
+            <div>
+              <div class="small">Total Income</div>
+              <div class="value" aria-label="Total Income">₹ 1,20,000</div>
+            </div>
+            <div class="badge income">Income</div>
+          </div>
+        </div>
+        <div class="card col-span-3">
+          <h3>Spending</h3>
+          <div class="kpi">
+            <div>
+              <div class="small">Total Spent</div>
+              <div class="value" aria-label="Total Spent">₹ 41,550</div>
+            </div>
+            <div class="badge expense">Expense</div>
+          </div>
+        </div>
+        <div class="card col-span-3">
+          <h3>Savings</h3>
+          <div class="kpi">
+            <div>
+              <div class="small">Savings %</div>
+              <div class="value">34%</div>
+            </div>
+            <div class="badge saving">Saving</div>
+          </div>
+        </div>
+        <div class="card col-span-3">
+          <h3>Top Category</h3>
+          <div class="kpi">
+            <div>
+              <div class="small">Food & Dining</div>
+              <div class="value">₹ 14,200</div>
+            </div>
+            <div class="badge expense">Top</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" style="margin-top: 8px;">
+        <div class="card col-span-7">
+          <div class="section-title">
+            <h2>Recent Transactions</h2>
+            <a class="btn" href="#">View All</a>
+          </div>
+          <div class="table-wrap">
+            <table class="table" aria-label="Recent Transactions">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2025-09-01</td>
+                  <td>Salary</td>
+                  <td>₹ 80,000</td>
+                  <td><span class="badge income">Income</span></td>
+                </tr>
+                <tr>
+                  <td>2025-09-02</td>
+                  <td>Food</td>
+                  <td>₹ 850</td>
+                  <td><span class="badge expense">Expense</span></td>
+                </tr>
+                <tr>
+                  <td>2025-09-03</td>
+                  <td>Transport</td>
+                  <td>₹ 120</td>
+                  <td><span class="badge expense">Expense</span></td>
+                </tr>
+                <tr>
+                  <td>2025-09-04</td>
+                  <td>Savings Transfer</td>
+                  <td>₹ 10,000</td>
+                  <td><span class="badge saving">Saving</span></td>
+                </tr>
+                <tr>
+                  <td>2025-09-05</td>
+                  <td>Bills</td>
+                  <td>₹ 2,300</td>
+                  <td><span class="badge expense">Expense</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card col-span-5">
+          <div class="section-title">
+            <h2>Spending Breakdown</h2>
+          </div>
+          <div class="spending-item" aria-label="Food spending 65%">
+            <div>
+              <div class="small">Food</div>
+              <div class="progress red"><span style="width:65%"></span></div>
+            </div>
+            <div class="small" aria-hidden="true">65%</div>
+          </div>
+          <div class="spending-item" aria-label="Transport spending 20%" style="margin-top:10px;">
+            <div>
+              <div class="small">Transport</div>
+              <div class="progress red"><span style="width:20%"></span></div>
+            </div>
+            <div class="small" aria-hidden="true">20%</div>
+          </div>
+          <div class="spending-item" aria-label="Bills spending 35%" style="margin-top:10px;">
+            <div>
+              <div class="small">Bills</div>
+              <div class="progress red"><span style="width:35%"></span></div>
+            </div>
+            <div class="small" aria-hidden="true">35%</div>
+          </div>
+          <div class="spending-item" aria-label="Shopping spending 25%" style="margin-top:10px;">
+            <div>
+              <div class="small">Shopping</div>
+              <div class="progress red"><span style="width:25%"></span></div>
+            </div>
+            <div class="small" aria-hidden="true">25%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" style="margin-top: 8px;">
+        <div class="card col-span-12 monthly-trend-placeholder">
+          <div class="small">Monthly Trend (placeholder)</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="logout" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="logout-title">
+    <div class="modal">
+      <h3 id="logout-title">Are you sure you want to logout?</h3>
+      <p class="small">You will be redirected to the login page.</p>
+      <div class="actions">
+        <a class="btn" href="#">Cancel</a>
+        <a class="btn danger" href="login.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

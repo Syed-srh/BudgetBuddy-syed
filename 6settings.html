@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetBuddy – Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" data-theme="dark">
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BB</div>
+        <strong>BudgetBuddy</strong>
+      </div>
+      <nav class="nav">
+          
+        <a href="1intro.html">🏠<span>Intro</span></a>
+        <a href="3dashboard.html">📈<span>Dashboard</span></a>
+        <a  href="2profile.html">👤<span>Profile</span></a>
+        <a href="4categories.html">📊<span>Categories</span></a>
+        <a href="5reports.html">📑<span>Reports</span></a>
+        <a class="active" href="6settings.html">⚙️<span>Settings</span></a>
+        <div class="spacer"></div>
+       
+        <a href="#logout">🚪<span>Logout</span></a>
+        
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <div class="balance">
+        <div>
+          <div class="small">Settings</div>
+          <div class="amount">Personalization & Security</div>
+        </div>
+        <div class="note">Customize your experience</div>
+      </div>
+      <div class="profile">
+        <div class="avatar">SR</div>
+        <div class="small">Syed Rahil</div>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="grid">
+        <div class="card col-span-6 card-grid">
+          <h3>Personalization</h3>
+          <div class="field">
+            <label for="theme">Theme</label>
+            <select id="theme" class="input">
+              <option>Dark</option>
+              <option>Light</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency" class="input">
+              <option>₹ INR</option>
+              <option>$ USD</option>
+              <option>€ EUR</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card col-span-6 card-grid">
+          <h3>Notifications</h3>
+          <div class="field">
+            <label for="notif">Email notifications</label>
+            <select id="notif" class="input">
+              <option>On</option>
+              <option>Off</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="alerts">Expense alerts</label>
+            <select id="alerts" class="input">
+              <option>On</option>
+              <option>Off</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card col-span-12 card-grid">
+          <h3>Security</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="password">Change Password</label>
+              <input id="password" class="input" type="password" placeholder="New password" />
+            </div>
+            <div class="field">
+              <label for="confirm">Confirm Password</label>
+              <input id="confirm" class="input" type="password" placeholder="Confirm password" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="twofa">Two-factor Authentication</label>
+            <select id="twofa" class="input">
+              <option>Enable</option>
+              <option>Disable</option>
+            </select>
+          </div>
+          <div>
+            <a class="btn primary" href="#">Save Changes</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="logout" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="logout-title">
+    <div class="modal">
+      <h3 id="logout-title">Are you sure you want to logout?</h3>
+      <p class="small">You will be redirected to the login page.</p>
+      <div class="actions">
+        <a class="btn" href="#">Cancel</a>
+        <a class="btn danger" href="login.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
